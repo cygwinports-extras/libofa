@@ -1,0 +1,74 @@
+libofa
+------------------------------------------
+Open Fingerprint Architecture (MusicDNS) library
+
+Runtime requirements:
+  cygwin-1.5.21-1
+  fftw3-3.0.1-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.21-1
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  bison-2.1-1
+  cygport-0.2.4-1
+  flex-2.5.33-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.22-1
+  make-3.81-1
+  sed-4.1.5-1
+
+Canonical website:
+  http://www.musicdns.org/
+
+Canonical download:
+  http://www.musicdns.org/downloads
+
+-------------------------------------------
+
+Build instructions:
+  unpack libofa-0.9.3-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libofa-0.9.3-X.cygport all
+
+This will create:
+  /usr/src/libofa-0.9.3-X-src.tar.bz2
+  /usr/src/libofa-0.9.3-X.tar.bz2
+  /usr/src/libofa-devel-0.9.3-X.tar.bz2
+  /usr/src/libofa0-0.9.3-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/share/doc/Cygwin/libofa-0.9.3.README
+  /usr/share/doc/libofa-0.9.3/AUTHORS
+  /usr/share/doc/libofa-0.9.3/COPYING
+  /usr/share/doc/libofa-0.9.3/README
+
+Files included in the runtime library package:
+
+  /usr/bin/cygofa-0.dll
+
+Files included in the development package:
+
+  /usr/include/ofa1/ofa.h
+  /usr/lib/libofa.dll.a
+  /usr/lib/libofa.la
+  /usr/lib/pkgconfig/libofa.pc
+
+------------------
+
+Port Notes:
+
+----- version 0.9.3-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

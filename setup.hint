@@ -1,0 +1,4 @@
+category: Audio Libs
+requires: libofa0
+sdesc: "Open Fingerprint Architecture library (docs)"
+ldesc: "Open Fingerprint Architecture (MusicDNS.org) library"
