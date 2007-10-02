@@ -1,0 +1,13 @@
+DESCRIPTION="Open Fingerprint Architecture library"
+HOMEPAGE="http://www.musicip.com/dns/"
+SRC_URI="http://www.musicip.com/dns/files/${P}.tar.gz"
+PATCH_URI="mirror://portage/media-libs/${PN}/files/${P}-gcc-4.patch"
+
+PKG_NAMES="${PN} ${PN}0 ${PN}-devel"
+PKG_HINTS='setup runtime devel'
+PKG_CONTENTS[0]='usr/share/doc/'
+PKG_CONTENTS[1]='usr/bin/*.dll'
+PKG_CONTENTS[2]='usr/include/ usr/lib/'
+
+CYGCONF_ARGS='--disable-static'
+
