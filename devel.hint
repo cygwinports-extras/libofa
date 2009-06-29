@@ -1,5 +1,5 @@
 category: Audio Libs
-requires: cygwin libofa0 fftw3-dev
+requires: libofa0 fftw3-dev
 external-source: libofa
 sdesc: "Open Fingerprint Architecture library (development)"
 ldesc: "Open Fingerprint Architecture (MusicDNS.org) library"
