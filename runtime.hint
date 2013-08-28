@@ -1,5 +1,0 @@
-category: Audio
-requires: libfftw3_3 libgcc1 libstdc++6
-external-source: libofa
-sdesc: "Open Fingerprint Architecture library (runtime)"
-ldesc: "Open Fingerprint Architecture (MusicDNS.org) library"

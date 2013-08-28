@@ -1,0 +1,22 @@
+NAME="libofa"
+VERSION=0.9.3
+RELEASE=10
+CATEGORY="Libs"
+SUMMARY="Open Fingerprint Architecture library"
+DESCRIPTION="Open Fingerprint Architecture (MusicDNS.org) library"
+HOMEPAGE="http://code.google.com/p/musicip-libofa/"
+SRC_URI="http://musicip-libofa.googlecode.com/files/libofa-${VERSION}.tar.gz"
+PATCH_URI="
+	mirror://portage/media-libs/libofa/files/libofa-0.9.3-gcc-4.patch
+	mirror://portage/media-libs/libofa/files/libofa-0.9.3-gcc-4.3.patch
+	mirror://portage/media-libs/libofa/files/libofa-0.9.3-gcc-4.4.patch
+	mirror://portage/media-libs/libofa/files/libofa-0.9.3-gcc-4.7.patch
+	mirror://portage/media-libs/libofa/files/libofa-0.9.3-curl-7.21.patch
+"
+
+PKG_NAMES="libofa0 libofa-devel"
+libofa0_CONTENTS="usr/bin/cygofa-0.dll usr/share/doc/"
+libofa_devel_CONTENTS="usr/include/ usr/lib/"
+
+# required for libtool-2.x
+WANT_AUTOMAKE=1.9
